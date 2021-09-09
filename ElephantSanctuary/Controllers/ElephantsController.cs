@@ -6,7 +6,7 @@
     using System.Collections.Generic;
 
     [ApiController]
-    [Route("api")]
+    [Route("api/elephants")]
     public class ElephantsController : ControllerBase
     {
         private readonly IElephantManagement elephantManagement;
@@ -16,10 +16,22 @@
             this.elephantManagement = elephantManagement;
         }
 
-        [HttpGet("[action]")]
+        [HttpGet]
         public IEnumerable<Elephant> All()
         {
             return this.elephantManagement.GetAllElephants();
+        }
+
+        [HttpGet("{name}")]
+        public ActionResult<Elephant> ElephantByName(string name)
+        {
+            var response = this.elephantManagement.GetElephantByName(name);
+            if (response == null)
+            {
+                return NotFound();
+            }
+
+            return response;
         }
     }
 }

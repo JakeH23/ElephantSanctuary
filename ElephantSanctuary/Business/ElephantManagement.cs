@@ -5,10 +5,13 @@
     using ElephantSanctuary.Services;
     using System.Collections.Generic;
     using System.IO.Abstractions;
+    using System.Linq;
 
     public interface IElephantManagement
     {
         IEnumerable<Elephant> GetAllElephants();
+
+        Elephant GetElephantByName(string name);
     }
 
     public class ElephantManagement : IElephantManagement
@@ -25,6 +28,12 @@
         public IEnumerable<Elephant> GetAllElephants()
         {
             return this.dataService.GetData<Elephant>(InformationType.elephants, this.file);
+        }
+
+        public Elephant GetElephantByName(string name)
+        {
+            var elephants = this.dataService.GetData<Elephant>(InformationType.elephants, this.file);
+            return elephants.SingleOrDefault(x => x.Name == name);
         }
     }
 }
