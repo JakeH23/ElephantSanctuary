@@ -41,19 +41,13 @@
         public ViewModel.Elephant GetElephantByName(string name)
         {
             var elephantsData = this.dataService.GetData<DataModel.Elephant>(InformationType.elephants, this.file);
-            var elephant = elephantsData.SingleOrDefault(x => x.Name == name);
+            var elephant = elephantsData.SingleOrDefault(x => string.Equals(x.Name, name, StringComparison.CurrentCultureIgnoreCase));
             return elephant is null ? null : this.mapper.Map<ViewModel.Elephant>(elephant);
         }
 
         public IEnumerable<ViewModel.Elephant> AddElephant(ViewModel.Elephant elephant)
         {
             var data = this.mapper.Map<DataModel.Elephant>(elephant);
-
-            var errors = data.IsValid();
-            if (errors.Any())
-            {
-                return null;
-            }
 
             data.Id = Guid.NewGuid();
 

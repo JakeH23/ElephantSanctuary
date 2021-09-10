@@ -1,0 +1,130 @@
+[
+  {
+    "id": "53574479-98d3-48e4-b4a3-58d52a64efbc",
+    "name": "Sally",
+    "breed": "Labrador Retriever",
+    "breedType": "Purebred",
+    "origin": "Canada,USA",
+    "temperament": [ "Cheerful", "Gentle", "Friendly", "Intelligent" ],
+    "hypoallergenic": false,
+    "intelligence": 7,
+    "photo": "https://learnwebcode.github.io/json-example/images/cat-2.jpg"
+  },
+  {
+    "id": "b3786153-cc46-4512-88e4-3a775c21ba5b",
+    "name": "Demon",
+    "breed": "German Shepard",
+    "breedType": "Purebred",
+    "origin": "Germany",
+    "temperament": [ "Corageous", "Intelligent", "Loyal", "Watchful" ],
+    "hypoallergenic": false,
+    "intelligence": 3,
+    "photo": "https://learnwebcode.github.io/json-example/images/cat-2.jpg"
+  },
+  {
+    "id": "87d1e055-0d5a-4e71-8e9e-71542e2f573d",
+    "name": "Sid",
+    "breed": "Golden Retriever",
+    "breedType": "Purebred",
+    "origin": "United Kingdom",
+    "temperament": [ "Intelligent", "Kind", "Friendly", "Confident" ],
+    "hypoallergenic": false,
+    "intelligence": 4,
+    "photo": "https://learnwebcode.github.io/json-example/images/cat-2.jpg"
+  },
+  {
+    "id": "bc7f3d50-44ca-4014-a0ba-4c4b6b21d189",
+    "name": "Claude",
+    "breed": "French Bulldog",
+    "breedType": "Purebred",
+    "origin": "France, UK",
+    "temperament": [ "Playful", "Sociable", "Friendly", "Lively", "Patient" ],
+    "hypoallergenic": false,
+    "intelligence": 58,
+    "photo": "https://learnwebcode.github.io/json-example/images/cat-2.jpg"
+
+  },
+  {
+    "id": "347915c7-b0ae-43ff-9ce2-a1381ddf6dc0",
+    "name": "Shelby",
+    "breed": "Bulldog",
+    "breedType": "Purebred",
+    "origin": "United Kingdom",
+    "temperament": [ "Friendly", "Docile", "Willful", "Gregarious" ],
+    "hypoallergenic": false,
+    "intelligence": 77,
+    "photo": "https://learnwebcode.github.io/json-example/images/cat-2.jpg"
+
+  },
+  {
+    "id": "8fef6fda-abe6-4fe8-b6f1-04135e795e5f",
+    "name": "",
+    "breed": "Beagle",
+    "breedType": "Purebred",
+    "origin": "United Kingdom",
+    "temperament": [ "Gentle", "Intelligent", "Even Tempered", "Determined" ],
+    "hypoallergenic": false,
+    "intelligence": 72,
+    "photo": "https://learnwebcode.github.io/json-example/images/cat-2.jpg"
+
+  },
+  {
+    "id": "f5553036-03f3-4bbb-b6db-4019c4141a01",
+    "name": "Nancy",
+    "breed": "Poodle",
+    "breedType": "Purebred",
+    "origin": "Germany, France",
+    "temperament": [ "Intelligent", "Faithful", "Trainable", "Instinctual" ],
+    "hypoallergenic": true,
+    "intelligence": 2,
+    "photo": "https://learnwebcode.github.io/json-example/images/cat-2.jpg"
+
+  },
+  {
+    "id": "bed6f846-20d7-4908-bf16-49aa0da6d572",
+    "name": "Dave",
+    "breed": "Rottweiler",
+    "breedType": "Purebred",
+    "origin": "Germany",
+    "temperament": [ "Intelligent", "Corageous", "Fearless", "Confident" ],
+    "hypoallergenic": false,
+    "intelligence": 9,
+    "photo": "https://learnwebcode.github.io/json-example/images/cat-2.jpg"
+
+  },
+  {
+    "id": "38c78ac7-f713-4ce8-a01a-ed6b8f31c76e",
+    "name": "Dexter",
+    "breed": "German Shorthaired Pointer",
+    "breedType": "Purebred",
+    "origin": "Germany",
+    "temperament": [ "Intelligent", "Trainable", "Boisterous", "Cooperative" ],
+    "hypoallergenic": false,
+    "intelligence": 9,
+    "photo": "https://learnwebcode.github.io/json-example/images/cat-2.jpg"
+
+  },
+  {
+    "id": "3ddfa795-d5a7-4d1e-8b00-a31445426bfd",
+    "name": "Presley",
+    "breed": "Yorkshire Terrier",
+    "breedType": "Purebred",
+    "origin": "United Kingdom",
+    "temperament": [ "Independent", "Intelligent", "Corageous", "Confident" ],
+    "hypoallergenic": true,
+    "intelligence": 27,
+    "photo": "https://learnwebcode.github.io/json-example/images/cat-2.jpg"
+
+  },
+  {
+    "id": "13d64e67-04ab-433c-b473-c454a10a6a5e",
+    "name": "Gary",
+    "breed": "Boxer",
+    "breedType": "Purebred",
+    "origin": "Germany",
+    "temperament": [ "Playful", "Friendly", "Devoted", "Loyal" ],
+    "hypoallergenic": false,
+    "intelligence": 48,
+    "photo": "https://learnwebcode.github.io/json-example/images/cat-2.jpg"
+  }
+]

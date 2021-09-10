@@ -14,6 +14,8 @@
             {
                 cfg.CreateMap<DataModel.Elephant, ViewModel.Elephant>();
                 cfg.CreateMap<ViewModel.Elephant, DataModel.Elephant>().ForMember(dest => dest.Id, opt => opt.Ignore());
+                cfg.CreateMap<DataModel.Dog, ViewModel.Dog>();
+                cfg.CreateMap<ViewModel.Dog, DataModel.Dog>().ForMember(dest => dest.Id, opt => opt.Ignore());
             });
         }
     }

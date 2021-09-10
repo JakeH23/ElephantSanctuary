@@ -24,6 +24,7 @@ namespace ElephantSanctuary
             services.AddControllers();
             services.AddScoped<IDataService, DataService>();
             services.AddScoped<IElephantManagement, ElephantManagement>();
+            services.AddScoped<IDogManagement, DogManagement>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

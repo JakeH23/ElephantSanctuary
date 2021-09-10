@@ -2,6 +2,7 @@
 {
     public enum InformationType
     {
-        elephants
+        elephants,
+        dogs
     }
 }

@@ -14,7 +14,7 @@
 
     public class DataService : IDataService
     {
-        private const string DataFilePath = "../../../../Northcoders/c-sharp-little-web-api/Elephant Sanctuary/Elephant Sanctuary/Data";
+        private const string DataFilePath = "../../../../Northcoders/ElephantSanctuary/ElephantSanctuary/Data";
 
         public List<T> GetData<T>(InformationType fileName, IFile file)
         {
