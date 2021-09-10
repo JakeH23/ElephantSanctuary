@@ -1,7 +1,7 @@
 ﻿namespace ElephantSanctuary.Controllers
 {
     using ElephantSanctuary.Business;
-    using ElephantSanctuary.Models;
+    using ElephantSanctuary.Models.View;
     using Microsoft.AspNetCore.Mvc;
     using System.Collections.Generic;
 
@@ -17,13 +17,13 @@
         }
 
         [HttpGet]
-        public IEnumerable<Elephant> All()
+        public IEnumerable<Elephant> AllElephants()
         {
             return this.elephantManagement.GetAllElephants();
         }
 
         [HttpGet("{name}")]
-        public ActionResult<Elephant> ElephantByName(string name)
+        public ActionResult<Elephant> GetElephantByName(string name)
         {
             var response = this.elephantManagement.GetElephantByName(name);
             if (response == null)
@@ -32,6 +32,17 @@
             }
 
             return response;
+        }
+
+        [HttpPost]
+        public ActionResult<IEnumerable<Elephant>> AddElephant(Elephant elephant)
+        {
+            var response = this.elephantManagement.AddElephant(elephant);
+            if (response == null)
+            {
+                return Problem();
+            }
+            return Ok();
         }
     }
 }

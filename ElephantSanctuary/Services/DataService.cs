@@ -8,6 +8,8 @@
     public interface IDataService
     {
         List<T> GetData<T>(InformationType fileName, IFile file);
+
+        List<T> UpdateData<T>(InformationType fileName, IFile file, T item);
     }
 
     public class DataService : IDataService
@@ -16,8 +18,19 @@
 
         public List<T> GetData<T>(InformationType fileName, IFile file)
         {
-            var path = file.ReadAllText(@$"{DataFilePath}/{fileName}.json");
-            return JsonSerializer.Deserialize<List<T>>(path);
+            var json = file.ReadAllText(@$"{DataFilePath}/{fileName}.json");
+            return JsonSerializer.Deserialize<List<T>>(json);
+        }
+
+        public List<T> UpdateData<T>(InformationType fileName, IFile file, T item)
+        {
+            var path = @$"{DataFilePath}/{fileName}.json";
+            var json = file.ReadAllText(path);
+            var data = JsonSerializer.Deserialize<List<T>>(json);
+            data.Add(item);
+            var serializedData = JsonSerializer.Serialize(data);
+            file.WriteAllText(path, serializedData);
+            return data;
         }
     }
 }

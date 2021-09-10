@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using ElephantSanctuary.Models;
-
-namespace ElephantSanctuaryTests
+﻿namespace ElephantSanctuaryTests
 {
+    using ElephantSanctuary.Models.Data;
+    using System;
+    using System.Collections.Generic;
+
     public class MockData
     {
         public List<Elephant> Elephants => GetTestElephantData();
